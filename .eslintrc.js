@@ -12,14 +12,14 @@ const ERROR = 2;
 
 module.exports = {
   extends: [
-    'fbjs',
-    'prettier'
+    // 'fbjs',
+    // 'prettier'
   ],
 
   // Stop ESLint from looking for a configuration file in parent folders
   root: true,
 
-  plugins: ['jest', 'no-for-of-loops', 'react', 'react-internal'],
+  plugins: ['jest', 'no-for-of-loops', 'react'],
 
   parser: 'babel-eslint',
   parserOptions: {
@@ -96,11 +96,11 @@ module.exports = {
 
     // CUSTOM RULES
     // the second argument of warning/invariant should be a literal string
-    'react-internal/no-primitive-constructors': ERROR,
-    'react-internal/no-to-warn-dev-within-to-throw': ERROR,
-    'react-internal/invariant-args': ERROR,
-    'react-internal/warning-args': ERROR,
-    'react-internal/no-production-logging': ERROR,
+    // 'react-internal/no-primitive-constructors': ERROR,
+    // 'react-internal/no-to-warn-dev-within-to-throw': ERROR,
+    // 'react-internal/invariant-args': ERROR,
+    // 'react-internal/warning-args': ERROR,
+    // 'react-internal/no-production-logging': ERROR,
   },
 
   overrides: [
@@ -150,8 +150,8 @@ module.exports = {
         'packages/react-devtools*/**/*.js'
       ],
       rules: {
-        'react-internal/no-production-logging': OFF,
-        'react-internal/warning-args': OFF,
+        // 'react-internal/no-production-logging': OFF,
+        // 'react-internal/warning-args': OFF,
       },
     },
     {
