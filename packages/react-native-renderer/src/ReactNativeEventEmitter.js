@@ -7,15 +7,15 @@
  * @flow
  */
 
-import {getListener, runExtractedEventsInBatch} from 'events/EventPluginHub';
-import {registrationNameModules} from 'events/EventPluginRegistry';
-import {batchedUpdates} from 'events/ReactGenericBatching';
+import {getListener, runExtractedEventsInBatch} from 'react-events/EventPluginHub';
+import {registrationNameModules} from 'react-events/EventPluginRegistry';
+import {batchedUpdates} from 'react-events/ReactGenericBatching';
 import warningWithoutStack from 'shared/warningWithoutStack';
 
 import {getInstanceFromNode} from './ReactNativeComponentTree';
 
-import type {AnyNativeEvent} from 'events/PluginModuleType';
-import type {TopLevelType} from 'events/TopLevelEventTypes';
+import type {AnyNativeEvent} from 'react-events/PluginModuleType';
+import type {TopLevelType} from 'react-events/TopLevelEventTypes';
 
 export {getListener, registrationNameModules as registrationNames};
 

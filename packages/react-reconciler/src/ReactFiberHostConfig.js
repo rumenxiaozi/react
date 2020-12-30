@@ -7,7 +7,7 @@
  * @flow
  */
 
-import invariant from 'shared/invariant';
+// import invariant from 'shared/invariant';
 
 // We expect that our Rollup, Jest, and Flow configurations
 // always shim this module with the corresponding host config
@@ -17,4 +17,6 @@ import invariant from 'shared/invariant';
 // sure that if we *do* accidentally break the configuration,
 // the failure isn't silent.
 
-invariant(false, 'This module must be shimmed by a specific renderer.');
+// invariant(false, 'This module must be shimmed by a specific renderer.');
+
+export * from './forks/ReactFiberHostConfig.dom';

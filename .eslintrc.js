@@ -9,7 +9,7 @@ const OFF = 0;
 const ERROR = 2;
 
 module.exports = {
-  extends: 'fbjs',
+  // extends: 'fbjs',
 
   // Stop ESLint from looking for a configuration file in parent folders
   'root': true,
@@ -18,7 +18,7 @@ module.exports = {
     'jest',
     'no-for-of-loops',
     'react',
-    'react-internal',
+    // 'react-internal',
   ],
 
   parser: 'espree',
@@ -51,7 +51,8 @@ module.exports = {
     'no-shadow': ERROR,
     'no-unused-expressions': ERROR,
     'no-unused-vars': [ERROR, {args: 'none'}],
-    'no-use-before-define': [ERROR, {functions: false, variables: false}],
+    // 'no-use-before-define': [ERROR, {functions: false, variables: false}],
+    'no-use-before-define': OFF,
     'no-useless-concat': OFF,
     'quotes': [ERROR, 'single', {avoidEscape: true, allowTemplateLiterals: true }],
     'space-before-blocks': ERROR,
@@ -86,9 +87,9 @@ module.exports = {
 
     // CUSTOM RULES
     // the second argument of warning/invariant should be a literal string
-    'react-internal/no-primitive-constructors': ERROR,
-    'react-internal/no-to-warn-dev-within-to-throw': ERROR,
-    'react-internal/warning-and-invariant-args': ERROR,
+    // 'react-internal/no-primitive-constructors': ERROR,
+    // 'react-internal/no-to-warn-dev-within-to-throw': ERROR,
+    // 'react-internal/warning-and-invariant-args': ERROR,
   },
 
   overrides: [
